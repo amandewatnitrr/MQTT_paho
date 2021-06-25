@@ -34,6 +34,12 @@ cd paho.mqtt.python
 python setup.py install
 ```
 
+The accessing information of the broker is as follows:
+
+Broker: broker.emqx.io
+TCP Port: 1883
+Websocket Port: 8083
+
 ## Refernces:
 
 1. https://pypi.org/project/paho-mqtt/#single
