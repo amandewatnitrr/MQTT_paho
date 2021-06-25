@@ -16,6 +16,10 @@ python3 --version
 ```
 The Paho Python Client provides a client class with support for both MQTT v3.1 and v3.1.1 on Python 2.7 or 3.x. It also provides some helper functions to make publishing one off messages to an MQTT server very straightforward.
 
+<p align="center">
+<img src="https://github.com/amandewatnitrr/MQTT/blob/main/imgs/output-onlinegiftools.gif" width="30%">
+</p>
+
 ### Installation using pip
 
 ```Terminal
