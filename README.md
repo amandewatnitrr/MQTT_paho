@@ -101,6 +101,9 @@ for i in range(5):
             time.sleep(1)
 ```
 
+### Subscribe to Messages
+
+
 ```Subscribe
 import paho.mqtt.publish as publish
 import paho.mqtt.client as mqtt
