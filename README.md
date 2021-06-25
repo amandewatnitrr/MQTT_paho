@@ -1,6 +1,6 @@
 # MQTT
 <p align="center">
-  <img src="https://github.com/amandewatnitrr/MQTT/blob/main/imgs/IoT.gif">
+  <img src="https://github.com/amandewatnitrr/MQTT/blob/main/imgs/IoT.gif" width="40%">
 </p>
 <p align="justify">
 MQTT is a lightweight IoT messaging protocol based on the publish/subscribe model, which provides a real-time and reliable messaging service for IoT devices, only using very little code and bandwidth. It is suitable for devices with limited hardware resources and a network environment with limited bandwidth. Therefore, the MQTT protocol is widely used.
