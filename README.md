@@ -154,3 +154,7 @@ client.connect("broker.emqx.io", 1883, 60)
 # set the network loop blocking, it will not actively end the program before calling disconnect() or the program crash
 client.loop_forever()
 ```
+
+## Referneces:
+1. http://www.steves-internet-guide.com/publishing-messages-mqtt-client/
+2. https://www.eclipse.org/paho/index.php?page=clients/python/docs/index.php
