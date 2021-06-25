@@ -1,6 +1,9 @@
 # test_connect.py 
 import paho.mqtt.client as mqtt 
 
+## https://pypi.org/project/paho-mqtt/#single
+## https://www.emqx.io/blog/how-to-use-mqtt-in-python
+
 # The callback function. It will be triggered when trying to connect to the MQTT broker
 # client is the client instance connected this time
 # userdata is users' information, usually empty. If it is needed, you can set it through user_data_set function.
