@@ -104,7 +104,7 @@ for i in range(5):
 ### Subscribe to Messages
 
 
-```Subscribe
+```Python
 import paho.mqtt.publish as publish
 import paho.mqtt.client as mqtt
 from datetime import datetime
