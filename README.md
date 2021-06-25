@@ -42,6 +42,10 @@ TCP Port: 1883
 Websocket Port: 8083
 ```
 
+### MQTT Connect
+
+Function will be called after connecting the client, and we can determine whether the client is connected successfully according to rc in this function. Usually, we will create an MQTT client at the same time and this client will connect to broker.emqx.io.
+
 ## Refernces:
 
 1. https://pypi.org/project/paho-mqtt/#single
