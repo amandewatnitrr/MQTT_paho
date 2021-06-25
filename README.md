@@ -36,9 +36,11 @@ python setup.py install
 
 The accessing information of the broker is as follows:
 
+```python
 Broker: broker.emqx.io
 TCP Port: 1883
 Websocket Port: 8083
+```
 
 ## Refernces:
 
