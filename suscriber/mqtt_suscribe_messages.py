@@ -1,5 +1,13 @@
 # subscriber.py
+import paho.mqtt.publish as publish
 import paho.mqtt.client as mqtt
+from datetime import datetime
+import time
+import requests
+import random
+import decimal
+import csv
+from time import strptime
 
 def on_connect(client, userdata, flags, rc):
     print(f"Connected with result code {rc}")
@@ -9,7 +17,11 @@ def on_connect(client, userdata, flags, rc):
 
 # the callback function, it will be triggered when receiving messages
 def on_message(client, userdata, msg):
-    print(f"{msg.topic} {msg.payload}")
+    data = {msg.payload}
+    print(type(f"{msg.topic} {msg.payload}"))
+    with open('bmp_180.csv', 'a', encoding='UTF8') as f:
+        writer = csv.writer(f)
+        writer.writerow(data)
     
 client = mqtt.Client()
 client.on_connect = on_connect
@@ -23,3 +35,4 @@ client.connect("broker.emqx.io", 1883, 60)
 
 # set the network loop blocking, it will not actively end the program before calling disconnect() or the program crash
 client.loop_forever()
+
