@@ -1,4 +1,3 @@
-# subscriber.py
 import paho.mqtt.publish as publish
 import paho.mqtt.client as mqtt
 from datetime import datetime
