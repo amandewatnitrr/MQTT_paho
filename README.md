@@ -26,6 +26,14 @@ The Paho Python Client provides a client class with support for both MQTT v3.1 a
 pip3 install paho-mqtt
 ```
 
+or in case you can do it the other way as well.
+
+```Terminal
+git clone https://github.com/eclipse/paho.mqtt.python
+cd paho.mqtt.python
+python setup.py install
+```
+
 ## Refernces:
 
 1. https://pypi.org/project/paho-mqtt/#single
