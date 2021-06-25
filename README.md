@@ -74,10 +74,19 @@ client.loop_forever()
 import paho.mqtt.client as mqtt
 import paho.mqtt.publish as publish
 import time
+import time
 import requests
 import random
 import decimal
 import csv
+
+def on_disconnect(client, userdata, rc):
+    if rc != 0:
+        client.wait_for_publish()
+
+
+def on_publish(client,userdata,result):
+    print("data published \n")
 
 def on_connect(client, userdata, flags, rc):
     print(f"Connected with result code {rc}")
@@ -97,8 +106,11 @@ for i in range(5):
             s = str(f'{row["Sensor"]}')
             data = t+","+k+","+s
             client.publish('raspberry/topic', payload=data, qos=0, retain=False)
+            client.on_publish = on_publish
+            client.on_disconnect = on_disconnect
             print(f"send {data} to raspberry/topic")
             time.sleep(1)
+
 ```
 
 ### Subscribe to Messages
