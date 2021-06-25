@@ -8,6 +8,20 @@ MQTT is a lightweight IoT messaging protocol based on the publish/subscribe mode
 This repo mainly presents how to use the paho-MQTT client and execute connection, subscribe, messaging, and other functions between the client and MQTT broker.
 </p>
 
+## Project Initialization
+
+This project uses Python 3.6 or 3.7.3 to develop and test. Use the command to confirm the Python version.<br>
+```Terminal
+python3 --version
+```
+The Paho Python Client provides a client class with support for both MQTT v3.1 and v3.1.1 on Python 2.7 or 3.x. It also provides some helper functions to make publishing one off messages to an MQTT server very straightforward.
+
+### Installation using pip
+
+```Terminal
+pip3 install paho-mqtt
+```
+
 ## Refernces:
 
-1. https://www.emqx.io/blog/use-mqtt-with-raspberry-pi
+1. https://pypi.org/project/paho-mqtt/#single
