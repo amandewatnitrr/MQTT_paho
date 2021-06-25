@@ -142,7 +142,3 @@ client.connect("broker.emqx.io", 1883, 60)
 # set the network loop blocking, it will not actively end the program before calling disconnect() or the program crash
 client.loop_forever()
 ```
-
-## Refernces:
-
-1. https://pypi.org/project/paho-mqtt/#single
