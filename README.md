@@ -74,7 +74,6 @@ client.loop_forever()
 import paho.mqtt.client as mqtt
 import paho.mqtt.publish as publish
 import time
-import time
 import requests
 import random
 import decimal
